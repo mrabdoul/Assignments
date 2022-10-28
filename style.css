@@ -1,0 +1,133 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 95%);
+}
+button {
+  background-color: hsl(0, 0%, 95%);
+  width: 9rem;
+  height: 3rem;
+  border-radius: 10rem;
+  border: 2px solid transparent;
+}
+button:hover{
+	background-color: transparent;
+	border: 2px solid hsl(0, 0%, 95%);
+	cursor: pointer;
+	color: hsl(0, 0%, 95%);
+}
+.card {
+  background-color: orange;
+  padding: 3rem;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  height: 24%;
+  width: 25%;
+}
+.card h2 {
+  margin-top: 2.5rem;
+  font-size: 2rem;
+
+  color: hsl(0, 0%, 95%);
+}
+.card p {
+  margin-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.colour-1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.colour-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.colour-3 {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.c-1 {
+  color: hsl(31, 77%, 52%);
+}
+.c-2 {
+  color: hsl(184, 100%, 22%);
+}
+.c-3 {
+  color: hsl(179, 100%, 13%);
+}
+.main {
+  width: 75%;
+  max-width: 21rem;
+  min-width: 12rem;
+  margin: 5rem auto;
+}
+@media screen and (min-width: 650px) {
+  button {
+    margin-top: 3.5rem;
+  }
+  .card {
+    height: 450px;
+  }
+  .card p {
+    padding: 0;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .card h2 {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .card img {
+    height: 3rem;
+    width: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .colour-1 {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+  }
+  .colour-3 {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.5rem;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 830px;
+    min-width: 680px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+  }
+}
